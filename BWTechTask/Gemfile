@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+gem 'bundler'
+gem 'watir'
+gem 'test-unit'
+gem 'cucumber'
+
