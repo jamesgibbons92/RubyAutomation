@@ -25,5 +25,7 @@ ENV['BROWSER']='chrome'
 
 ## To Run:
 `$ gem install bundler`
+
 `$ bundle install`
+
 `$ cucumber`
