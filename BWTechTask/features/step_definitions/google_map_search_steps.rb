@@ -11,6 +11,7 @@ end
 
 Then(/^I should see "([^"]*)"$/) do |arg1|
   infoPanel = @browser.div(:class => 'widget-pane-content-holder')
+  infoPanel.div(:class => 'section-hero-header-title').wait_until_present(timeout: 60)
   assert_equal(true,infoPanel.div(:class => 'section-hero-header-title').text.upcase.include?(arg1.upcase)) 
   #make the assertion case insensitive 
 end
